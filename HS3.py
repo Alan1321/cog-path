@@ -18,7 +18,9 @@ class add_hs3_path:
             len3 = 11
             total = len(file)
             len2 = total - len1 - len3
-            self.rasters[('HS3',f'{file[2:6]}{file[6:8]}{file[8:10]}',f'{file[11:11+len2]}')] = f'{self.path}/HS3/{file}'
+            date = f"{file[2:6]}{file[6:8]}{file[8:10]}"
+            filepath = f'{self.path}/{file}'
+            self.rasters[('HS3',f'{file[2:6]}{file[6:8]}{file[8:10]}', f'{file[11:11+len2]}')] = f'{filepath}'
 
 # self.rasters[('VHRSC','2013_03_01','LIS')] = f'{self.path}/VHRSC_LIS_FRD_cogs/VHRSC_LIS_FRD_Season_1.0_co.tif'
 # self.rasters[('VHRSC','2013_07_01','LIS')] = f'{self.path}/VHRSC_LIS_FRD_cogs/VHRSC_LIS_FRD_Season_2.0_co.tif'

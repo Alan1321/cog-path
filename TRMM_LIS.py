@@ -4,9 +4,9 @@ class add_trmmlis_path:
         self.path = base_path
         self.add_trmm_full()
         self.add_trmm_seasonal()
-        self.add_trmm_monthly()
-        self.add_trmm_diurnal()
-        self.add_trmm_daily()
+        # self.add_trmm_monthly()
+        # self.add_trmm_diurnal()
+        # self.add_trmm_daily()
 
     def add_trmm_full(self):
         self.rasters[('VHRFC','201301','LIS')] = f'{self.path}/VHRFC_LIS_FRD_co.tif'
